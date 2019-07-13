@@ -641,6 +641,8 @@ DarkRadiant Map Information File Version 2
 		Node { 0 } // brush (Brush)
 		Node { 0 } // brush (Brush)
 		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
 		Node { 0 } // entity (func_static_1)
 		Node { 0 } // entity (info_player_start_1)
 		Node { 0 } // entity (ambient_world)
@@ -819,10 +821,24 @@ DarkRadiant Map Information File Version 2
 		Node { 0 } // brush (Brush)
 		Node { 0 } // brush (Brush)
 		Node { 0 } // brush (Brush)
+		Node { 0 } // entity (func_static_24)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // entity (atdm_liquid_water_3)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // entity (atdm_liquid_water_4)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // entity (atdm_liquid_water_5)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // entity (atdm_liquid_water_6)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // entity (func_static_25)
+		Node { 0 } // entity (func_static_26)
+		Node { 0 } // entity (func_static_27)
 	}
 	MapEditTimings
 	{
-		TotalSecondsEdited { 6645 }
+		TotalSecondsEdited { 8451 }
 	}
 	SelectionSets
 	{
