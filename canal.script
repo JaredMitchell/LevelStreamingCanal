@@ -1,0 +1,58 @@
+#ifndef __CANAL_SCRIPT__
+#define __CANAL_SCRIPT__
+
+void main()
+{
+	sys.print("canal main()");
+	$ship_move_point.time(25);
+	$ship_move_point.accelTime(0.1);
+	$ship_move_point.decelTime(0.1);
+	sys.print($func_splinemover_2.getOrigin() + "\n");
+	$ship_move_point.startSpline($func_splinemover_2);
+	sys.wait(5);
+	sys.print($func_splinemover_2.getOrigin() + "\n");
+	sys.wait(5);
+	sys.print($func_splinemover_2.getOrigin() + "\n");
+}
+
+void captainTeleportReplica()
+{
+	$player1.setOrigin($captainTeleportReplicaPoint.getLocation().getOrigin());
+}
+
+void captainTeleportWorld()
+{
+	$player1.setOrigin($captainTeleportWorldPoint.getLocation().getOrigin());
+}
+
+void sternTeleportReplica()
+{
+	$player1.setOrigin($sternTeleportReplicaPoint.getOrigin());
+}
+
+void sternTeleportWorld()
+{
+	$player1.setOrigin($sternTeleportWorldPoint.getOrigin());
+}
+
+void starboardTeleportReplica()
+{
+	$player1.setOrigin($starboardTeleportReplicaPoint.getOrigin());
+}
+
+void starboardTeleportWorld()
+{
+	$player1.setOrigin($starboardTeleportWorldPoint.getOrigin());
+}
+
+void portTeleportReplica()
+{
+	$player1.setOrigin($portTeleportReplicaPoint.getOrigin());
+}
+
+void portTeleportWorld()
+{
+	$player1.setOrigin($portTeleportWorldPoint.getOrigin());
+}
+
+#endif
