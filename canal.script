@@ -1,6 +1,11 @@
 #ifndef __CANAL_SCRIPT__
 #define __CANAL_SCRIPT__
 
+void triggerDebug()
+{
+	sys.print("yup");
+}
+
 void waterLerp(vector Lock1EndPoint, vector Lock2EndPoint, float duration)
 {
 	vector Lock1StartPoint = $lock1Water.getWorldOrigin();
@@ -32,59 +37,63 @@ void waterLerp(vector Lock1EndPoint, vector Lock2EndPoint, float duration)
 void canalLogic()
 {
 	//lock1 fills, lock2 drains
-	thread waterLerp('0 3968 288', '2688 3968 -96', 40);
-	sys.wait(40);
+	thread waterLerp('0 3968 288', '2688 3968 -96', 10); //was 40
+	sys.wait(10);
 
 	$lock1North.activate($player1);
 	$lock1South.activate($player1);
 	sys.wait(20);
 
 	$ship_move_point.startSpline($func_splinemover_2);
-	sys.wait(120);
+	sys.wait(10); //was 120
 
 	$lock1North.activate($player1);
 	$lock1South.activate($player1);
 	sys.wait(20);
 
 	//lock1 drains, lock2 fills
-	thread waterLerp('0 3968 96', '2688 3968 96', 120);
+	thread waterLerp('0 3968 96', '2688 3968 96', 10); //was 120
 	$ship_move_point.disableSplineAngles();
 	$ship_move_point.startSpline($func_splinemover_3);
-	sys.wait(120);
+	sys.wait(10); //was 120
 
 	$lock2North.activate($player1);
 	$lock2South.activate($player1);
 	sys.wait(20);
 
 	$ship_move_point.startSpline($func_splinemover_4);
-	sys.wait(120);
+	sys.wait(10); //was 120
 
 	$lock2North.activate($player1);
 	$lock2South.activate($player1);
 	sys.wait(20);
 
 	//lock1 fills, lock2 drains
-	thread waterLerp('0 3968 288', '2688 3968 -96', 120);
+	thread waterLerp('0 3968 288', '2688 3968 -96', 10); //was 120
 	$ship_move_point.disableSplineAngles();
 	$ship_move_point.startSpline($func_splinemover_5);
-	sys.wait(120);
+	sys.wait(10); //was 120
 
 	$lock3North.activate($player1);
 	$lock3South.activate($player1);
 	sys.wait(20);
 
 	$ship_move_point.startSpline($func_splinemover_6);
-	sys.wait(120);	
+	sys.wait(10); //was 120
+
+	$setObjectiveFailEntity.activate($player1);
 }
 
 void main()
 {
 	sys.print("canal main()");
-	$ship_move_point.time(120);
+	$ship_move_point.time(10); //was 120
 	$ship_move_point.accelTime(3);
 	$ship_move_point.decelTime(3);
 
 	sys.waitFrame();
+
+	sys.print($player1.getName());
 
 	canalLogic();
 }

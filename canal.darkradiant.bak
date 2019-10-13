@@ -27,6 +27,10 @@ DarkRadiant Map Information File Version 2
 		Node { ( 438 ) ( 1 ) } // entity (lockbox_1)
 		Node { ( 439 ) ( 1 ) } // entity (atdm_lockbox_lever_01_1)
 	}
+	MapEditTimings
+	{
+		TotalSecondsEdited { 77150 }
+	}
 	Layers
 	{
 		Layer 0 { Default }
@@ -752,6 +756,14 @@ DarkRadiant Map Information File Version 2
 		Node { 0 } // brush (Brush)
 		Node { 0 } // patch (Patch)
 		Node { 0 } // patch (Patch)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
 		Node { 0 } // brush (Brush)
 		Node { 0 } // brush (Brush)
 		Node { 0 } // brush (Brush)
@@ -1733,10 +1745,17 @@ DarkRadiant Map Information File Version 2
 		Node { 0 } // entity (BuildingCFront)
 		Node { 0 } // entity (lockbox_1)
 		Node { 0 } // entity (atdm_lockbox_lever_01_1)
-	}
-	MapEditTimings
-	{
-		TotalSecondsEdited { 69315 }
+		Node { 0 } // entity (exit_objective_trigger)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // entity (ship_exit_failure_trigger)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // entity (player_disembark_trigger)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // entity (setObjectiveFailEntity)
+		Node { 0 } // entity (McGuffin)
+		Node { 0 } // entity (setBoardSuccessEntity)
+		Node { 0 } // entity (trigger_entityname_1)
+		Node { 0 } // brush (Brush)
 	}
 	SelectionSets
 	{
