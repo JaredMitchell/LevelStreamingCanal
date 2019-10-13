@@ -1,13 +1,42 @@
 #ifndef __CANAL_SCRIPT__
 #define __CANAL_SCRIPT__
 
+void waterLerp(vector Lock1EndPoint, vector Lock2EndPoint, float duration)
+{
+	vector Lock1StartPoint = $lock1Water.getWorldOrigin();
+	vector Lock2StartPoint = $lock2Water.getWorldOrigin();
+	float currentTime = 0;
+
+	vector newPos;
+	float lock1Diff = Lock1EndPoint_z - Lock1StartPoint_z;
+	float lock2Diff = Lock2EndPoint_z - Lock2StartPoint_z;
+
+	while(currentTime < duration)
+	{
+		currentTime += sys.getFrameTime();
+		
+		newPos = Lock1StartPoint;
+		newPos_z = (currentTime / duration) * lock1Diff + Lock1StartPoint_z;
+
+		$lock1Water.setWorldOrigin(newPos);
+
+		newPos = Lock2StartPoint;
+		newPos_z = (currentTime / duration) * lock2Diff + Lock2StartPoint_z;
+
+		$lock2Water.setWorldOrigin(newPos);
+
+		sys.wait(sys.getFrameTime());
+	}
+}
+
 void canalLogic()
 {
 	//lock1 fills, lock2 drains
+	thread waterLerp('0 3968 288', '2688 3968 -96', 40);
+	sys.wait(40);
 
 	$lock1North.activate($player1);
 	$lock1South.activate($player1);
-	//sys.wait($lock1North.getMoveTime());
 	sys.wait(20);
 
 	$ship_move_point.startSpline($func_splinemover_2);
@@ -18,6 +47,7 @@ void canalLogic()
 	sys.wait(20);
 
 	//lock1 drains, lock2 fills
+	thread waterLerp('0 3968 96', '2688 3968 96', 120);
 	$ship_move_point.disableSplineAngles();
 	$ship_move_point.startSpline($func_splinemover_3);
 	sys.wait(120);
@@ -34,6 +64,7 @@ void canalLogic()
 	sys.wait(20);
 
 	//lock1 fills, lock2 drains
+	thread waterLerp('0 3968 288', '2688 3968 -96', 120);
 	$ship_move_point.disableSplineAngles();
 	$ship_move_point.startSpline($func_splinemover_5);
 	sys.wait(120);
@@ -43,8 +74,7 @@ void canalLogic()
 	sys.wait(20);
 
 	$ship_move_point.startSpline($func_splinemover_6);
-	sys.wait(120);
-	
+	sys.wait(120);	
 }
 
 void main()
@@ -67,7 +97,6 @@ void captainTeleportReplica()
 void captainTeleportWorld()
 {
 	$player1.setOrigin($captainTeleportWorldPoint.getWorldOrigin());
-	sys.print($player1.getWorldOrigin());
 }
 
 void sternTeleportReplica()

@@ -3,6 +3,7 @@ DarkRadiant Map Information File Version 2
 	SelectionGroups
 	{
 		SelectionGroup 0 { "" }
+		SelectionGroup 1 { "" }
 	}
 	SelectionGroupNodeMapping
 	{
@@ -13,16 +14,18 @@ DarkRadiant Map Information File Version 2
 		Node { ( 0 725 ) ( 0 ) } // brush (Brush)
 		Node { ( 0 726 ) ( 0 ) } // brush (Brush)
 		Node { ( 0 727 ) ( 0 ) } // brush (Brush)
-		Node { ( 394 ) ( 0 ) } // entity (fog_sky)
-		Node { ( 395 ) ( 0 ) } // entity (func_static_735)
-		Node { ( 396 ) ( 0 ) } // entity (light_33)
-		Node { ( 397 ) ( 0 ) } // entity (func_static_660)
-		Node { ( 398 ) ( 0 ) } // entity (light_34)
-		Node { ( 399 ) ( 0 ) } // entity (info_portalsky_3)
-		Node { ( 400 ) ( 0 ) } // entity (func_emitter_3)
-		Node { ( 401 ) ( 0 ) } // entity (func_static_341)
-		Node { ( 402 ) ( 0 ) } // entity (func_static_153)
-		Node { ( 403 ) ( 0 ) } // entity (func_static_731)
+		Node { ( 393 ) ( 0 ) } // entity (fog_sky)
+		Node { ( 394 ) ( 0 ) } // entity (func_static_735)
+		Node { ( 395 ) ( 0 ) } // entity (light_33)
+		Node { ( 396 ) ( 0 ) } // entity (func_static_660)
+		Node { ( 397 ) ( 0 ) } // entity (light_34)
+		Node { ( 398 ) ( 0 ) } // entity (info_portalsky_3)
+		Node { ( 399 ) ( 0 ) } // entity (func_emitter_3)
+		Node { ( 400 ) ( 0 ) } // entity (func_static_341)
+		Node { ( 401 ) ( 0 ) } // entity (func_static_153)
+		Node { ( 402 ) ( 0 ) } // entity (func_static_731)
+		Node { ( 438 ) ( 1 ) } // entity (lockbox_1)
+		Node { ( 439 ) ( 1 ) } // entity (atdm_lockbox_lever_01_1)
 	}
 	Layers
 	{
@@ -760,7 +763,6 @@ DarkRadiant Map Information File Version 2
 		Node { 0 } // brush (Brush)
 		Node { 0 } // brush (Brush)
 		Node { 0 } // brush (Brush)
-		Node { 0 } // brush (Brush)
 		Node { 0 } // entity (info_player_start_1)
 		Node { 0 } // entity (ambient_world)
 		Node { 0 } // entity (door_104x56x2hinge_1)
@@ -907,16 +909,15 @@ DarkRadiant Map Information File Version 2
 		Node { 0 } // entity (func_static_24)
 		Node { 0 } // brush (Brush)
 		Node { 0 } // brush (Brush)
-		Node { 0 } // entity (atdm_liquid_water_3)
+		Node { 0 } // entity (lock0Water)
 		Node { 0 } // brush (Brush)
-		Node { 0 } // entity (atdm_liquid_water_4)
+		Node { 0 } // entity (lock1Water)
 		Node { 0 } // brush (Brush)
-		Node { 0 } // entity (atdm_liquid_water_5)
+		Node { 0 } // entity (lock2Water)
 		Node { 0 } // brush (Brush)
-		Node { 0 } // entity (atdm_liquid_water_6)
+		Node { 0 } // entity (exitWater)
 		Node { 0 } // brush (Brush)
 		Node { 0 } // entity (func_static_25)
-		Node { 0 } // entity (func_static_26)
 		Node { 0 } // entity (func_static_27)
 		Node { 0 } // entity (func_static_28)
 		Node { 0 } // entity (door_104x56x2hinge_23)
@@ -1724,10 +1725,18 @@ DarkRadiant Map Information File Version 2
 		Node { 0 } // brush (Brush)
 		Node { 0 } // brush (Brush)
 		Node { 0 } // brush (Brush)
+		Node { 0 } // entity (objectivesHaver)
+		Node { 0 } // entity (func_static_26)
+		Node { 0 } // entity (BuildingAFront)
+		Node { 0 } // entity (BuildingBFront)
+		Node { 0 } // entity (BuildingBOffice)
+		Node { 0 } // entity (BuildingCFront)
+		Node { 0 } // entity (lockbox_1)
+		Node { 0 } // entity (atdm_lockbox_lever_01_1)
 	}
 	MapEditTimings
 	{
-		TotalSecondsEdited { 66980 }
+		TotalSecondsEdited { 69336 }
 	}
 	SelectionSets
 	{
