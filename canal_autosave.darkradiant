@@ -1,5 +1,9 @@
 DarkRadiant Map Information File Version 2
 {
+	MapEditTimings
+	{
+		TotalSecondsEdited { 82231 }
+	}
 	SelectionGroups
 	{
 		SelectionGroup 0 { "" }
@@ -7,13 +11,13 @@ DarkRadiant Map Information File Version 2
 	}
 	SelectionGroupNodeMapping
 	{
+		Node { ( 0 720 ) ( 0 ) } // brush (Brush)
 		Node { ( 0 721 ) ( 0 ) } // brush (Brush)
 		Node { ( 0 722 ) ( 0 ) } // brush (Brush)
 		Node { ( 0 723 ) ( 0 ) } // brush (Brush)
 		Node { ( 0 724 ) ( 0 ) } // brush (Brush)
 		Node { ( 0 725 ) ( 0 ) } // brush (Brush)
 		Node { ( 0 726 ) ( 0 ) } // brush (Brush)
-		Node { ( 0 727 ) ( 0 ) } // brush (Brush)
 		Node { ( 393 ) ( 0 ) } // entity (fog_sky)
 		Node { ( 394 ) ( 0 ) } // entity (func_static_735)
 		Node { ( 395 ) ( 0 ) } // entity (light_33)
@@ -26,10 +30,6 @@ DarkRadiant Map Information File Version 2
 		Node { ( 402 ) ( 0 ) } // entity (func_static_731)
 		Node { ( 438 ) ( 1 ) } // entity (lockbox_1)
 		Node { ( 439 ) ( 1 ) } // entity (atdm_lockbox_lever_01_1)
-	}
-	MapEditTimings
-	{
-		TotalSecondsEdited { 77210 }
 	}
 	Layers
 	{
@@ -753,9 +753,21 @@ DarkRadiant Map Information File Version 2
 		Node { 0 } // brush (Brush)
 		Node { 0 } // brush (Brush)
 		Node { 0 } // brush (Brush)
+		Node { 0 } // patch (Patch)
+		Node { 0 } // patch (Patch)
 		Node { 0 } // brush (Brush)
-		Node { 0 } // patch (Patch)
-		Node { 0 } // patch (Patch)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
 		Node { 0 } // brush (Brush)
 		Node { 0 } // brush (Brush)
 		Node { 0 } // brush (Brush)
@@ -1755,7 +1767,19 @@ DarkRadiant Map Information File Version 2
 		Node { 0 } // brush (Brush)
 		Node { 0 } // entity (setObjectiveFailEntity)
 		Node { 0 } // entity (McGuffin)
-		Node { 0 } // entity (setBoardSuccessEntity)
+		Node { 0 } // entity (trigger_once_entityname_1)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // entity (callScriptFunction_CanalStart)
+		Node { 0 } // entity (atdm_mover_lever_1)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // entity (func_static_30)
+		Node { 0 } // entity (light_35)
+		Node { 0 } // entity (light_36)
+		Node { 0 } // entity (atdm_froblock_1)
+		Node { 0 } // entity (drawbridge_key)
+		Node { 0 } // entity (func_rotating_1)
+		Node { 0 } // entity (func_rotating_2)
+		Node { 0 } // entity (atdm_moveable_smithy_hammer_1)
 	}
 	SelectionSets
 	{

@@ -81,19 +81,26 @@ void canalLogic()
 	$ship_move_point.startSpline($func_splinemover_6);
 	sys.wait(10); //was 120
 
-	$setObjectiveFailEntity.activate($player1);
+	//$setObjectiveFailEntity.activate($player1);
 }
 
 void main()
 {
-	sys.print("canal main()");
+	sys.print("canal main()\n");
 	$ship_move_point.time(10); //was 120
 	$ship_move_point.accelTime(3);
 	$ship_move_point.decelTime(3);
 
 	sys.waitFrame();
 
-	sys.print($player1.getName());
+	sys.print($player1.getName() + "\n");
+}
+
+void canalStartLogic()
+{
+	sys.print("canalStartLogic\n");
+
+	//reveal objective(s)
 
 	canalLogic();
 }
@@ -136,6 +143,18 @@ void portTeleportReplica()
 void portTeleportWorld()
 {
 	$player1.setOrigin($portTeleportWorldPoint.getWorldOrigin());
+}
+
+void use_gear()
+{
+	sys.print("use_gear\n");
+
+	entity curr_item = $player1.getCurInvItemEntity();
+    if ($player1.getCurInvItemName() == $gear_jammable_1.getKey("item_name"))
+		{
+			$player1.changeInvItemCount(curr_item.getKey("inv_name"), curr_item.getKey("inv_category"), -1); //Removes item count by one.
+			sys.wait( 1 );
+		}
 }
 
 #endif
