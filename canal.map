@@ -20,8 +20,8 @@ Version 2
 "editor_drMapAngle8" "-3 15.3467 0"
 "editor_drMapPos9" "409.146 547.464 392.83"
 "editor_drMapAngle9" "-16.8 284.947 0"
-"editor_drLastCameraPos" "2282.62 3027.97 646.477"
-"editor_drLastCameraAngle" "-1.5 188.696 0"
+"editor_drLastCameraPos" "3692 3194.4 741.934"
+"editor_drLastCameraAngle" "-14.4 227.696 0"
 // primitive 0
 {
 brushDef3
@@ -19335,7 +19335,7 @@ brushDef3
 // entity 453
 {
 "classname" "func_rotating"
-"name" "func_rotating_1"
+"name" "gear_jammable_2"
 "model" "models/darkmod/mechanical/gears/gear_large_hollow_5_spoke.lwo"
 "origin" "2124 3012 628"
 "rotation" "1 0 0 0 1 0 0 0 1"
@@ -19345,14 +19345,14 @@ brushDef3
 // entity 454
 {
 "classname" "func_rotating"
-"name" "func_rotating_2"
+"name" "gear_jammable_3"
+"frob_action_script" "use_gear"
+"frobable" "1"
+"item_name" "hammer guy"
 "model" "models/darkmod/mechanical/gears/gear_large_hollow_5_spoke.lwo"
 "origin" "2124 3057 643"
 "rotation" "1 0 0 0 1 0 0 0 1"
 "speed" "-60"
-"frobable" "1"
-"frob_action_script" "use_gear"
-"item_name" "hammer guy"
 "x_axis" "1"
 }
 // entity 455
@@ -19360,12 +19360,12 @@ brushDef3
 "classname" "atdm:moveable_smithy_hammer"
 "name" "atdm_moveable_smithy_hammer_1"
 "inv_droppable" "1"
-"inv_icon" "-"
-"inv_name" "Hammer"
-"inv_use_on_frob" "1"
+"inv_icon" "guis\assets\hud\inventory_icons\skull_inv_icon"
+"inv_name" "hammer guy"
 "model" "models/darkmod/tools/smithyhammer.lwo"
 "origin" "3640 3088 720"
 "rotation" "0 0 1 0 1 0 -1 0 0"
+"inv_category" "Custom Items"
 }
 // entity 456
 {
@@ -19399,18 +19399,23 @@ brushDef3
 }
 // entity 458
 {
-"classname" "gear_jammable"
+"classname" "func_rotating"
 "name" "gear_jammable_1"
-"origin" "2128 2976 672"
-"rotation" "1 0 0 0 1 0 0 0 1"
-"speed" "-60"
-"x_axis" "1"
+"frob_action_script" "use_gear"
+"frobable" "1"
 "item_name" "hammer guy"
+"model" "models/darkmod/mechanical/gears/gear_large_hollow_5_spoke.lwo"
+"origin" "2124 2964 632"
+"rotation" "1 0 0 0 1 0 0 0 1"
+"speed" "60"
+"x_axis" "1"
 }
 // entity 459
 {
-"classname" "hammer_item"
-"name" "hammer_item_1"
-"origin" "3632 3120 704"
-"rotation" "1 0 0 0 1 0 0 0 1"
+"classname" "func_static"
+"name" "hammer_model"
+"hide" "1"
+"model" "models/darkmod/tools/smithyhammer.lwo"
+"origin" "2130 2986 640"
+"rotation" "-0.538242 0 -0.842792 0 1 0 0.842792 0 -0.538242"
 }

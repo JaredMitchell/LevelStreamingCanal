@@ -1,36 +1,5 @@
 DarkRadiant Map Information File Version 2
 {
-	MapEditTimings
-	{
-		TotalSecondsEdited { 82231 }
-	}
-	SelectionGroups
-	{
-		SelectionGroup 0 { "" }
-		SelectionGroup 1 { "" }
-	}
-	SelectionGroupNodeMapping
-	{
-		Node { ( 0 720 ) ( 0 ) } // brush (Brush)
-		Node { ( 0 721 ) ( 0 ) } // brush (Brush)
-		Node { ( 0 722 ) ( 0 ) } // brush (Brush)
-		Node { ( 0 723 ) ( 0 ) } // brush (Brush)
-		Node { ( 0 724 ) ( 0 ) } // brush (Brush)
-		Node { ( 0 725 ) ( 0 ) } // brush (Brush)
-		Node { ( 0 726 ) ( 0 ) } // brush (Brush)
-		Node { ( 393 ) ( 0 ) } // entity (fog_sky)
-		Node { ( 394 ) ( 0 ) } // entity (func_static_735)
-		Node { ( 395 ) ( 0 ) } // entity (light_33)
-		Node { ( 396 ) ( 0 ) } // entity (func_static_660)
-		Node { ( 397 ) ( 0 ) } // entity (light_34)
-		Node { ( 398 ) ( 0 ) } // entity (info_portalsky_3)
-		Node { ( 399 ) ( 0 ) } // entity (func_emitter_3)
-		Node { ( 400 ) ( 0 ) } // entity (func_static_341)
-		Node { ( 401 ) ( 0 ) } // entity (func_static_153)
-		Node { ( 402 ) ( 0 ) } // entity (func_static_731)
-		Node { ( 438 ) ( 1 ) } // entity (lockbox_1)
-		Node { ( 439 ) ( 1 ) } // entity (atdm_lockbox_lever_01_1)
-	}
 	Layers
 	{
 		Layer 0 { Default }
@@ -1757,8 +1726,6 @@ DarkRadiant Map Information File Version 2
 		Node { 0 } // entity (BuildingCFront)
 		Node { 0 } // entity (lockbox_1)
 		Node { 0 } // entity (atdm_lockbox_lever_01_1)
-		Node { 0 } // entity (ship_boarding_objective_trigger)
-		Node { 0 } // brush (Brush)
 		Node { 0 } // entity (exit_objective_trigger)
 		Node { 0 } // brush (Brush)
 		Node { 0 } // entity (ship_exit_failure_trigger)
@@ -1777,9 +1744,46 @@ DarkRadiant Map Information File Version 2
 		Node { 0 } // entity (light_36)
 		Node { 0 } // entity (atdm_froblock_1)
 		Node { 0 } // entity (drawbridge_key)
-		Node { 0 } // entity (func_rotating_1)
-		Node { 0 } // entity (func_rotating_2)
+		Node { 0 } // entity (gear_jammable_2)
+		Node { 0 } // entity (gear_jammable_3)
 		Node { 0 } // entity (atdm_moveable_smithy_hammer_1)
+		Node { 0 } // entity (setBoardObjectiveSuccess)
+		Node { 0 } // entity (trigger_once_entityname_2)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // entity (hammer_item_1)
+		Node { 0 } // entity (gear_jammable_1)
+		Node { 0 } // entity (func_static_154)
+	}
+	MapEditTimings
+	{
+		TotalSecondsEdited { 83687 }
+	}
+	SelectionGroups
+	{
+		SelectionGroup 0 { "" }
+		SelectionGroup 1 { "" }
+	}
+	SelectionGroupNodeMapping
+	{
+		Node { ( 0 720 ) ( 0 ) } // brush (Brush)
+		Node { ( 0 721 ) ( 0 ) } // brush (Brush)
+		Node { ( 0 722 ) ( 0 ) } // brush (Brush)
+		Node { ( 0 723 ) ( 0 ) } // brush (Brush)
+		Node { ( 0 724 ) ( 0 ) } // brush (Brush)
+		Node { ( 0 725 ) ( 0 ) } // brush (Brush)
+		Node { ( 0 726 ) ( 0 ) } // brush (Brush)
+		Node { ( 393 ) ( 0 ) } // entity (fog_sky)
+		Node { ( 394 ) ( 0 ) } // entity (func_static_735)
+		Node { ( 395 ) ( 0 ) } // entity (light_33)
+		Node { ( 396 ) ( 0 ) } // entity (func_static_660)
+		Node { ( 397 ) ( 0 ) } // entity (light_34)
+		Node { ( 398 ) ( 0 ) } // entity (info_portalsky_3)
+		Node { ( 399 ) ( 0 ) } // entity (func_emitter_3)
+		Node { ( 400 ) ( 0 ) } // entity (func_static_341)
+		Node { ( 401 ) ( 0 ) } // entity (func_static_153)
+		Node { ( 402 ) ( 0 ) } // entity (func_static_731)
+		Node { ( 438 ) ( 1 ) } // entity (lockbox_1)
+		Node { ( 439 ) ( 1 ) } // entity (atdm_lockbox_lever_01_1)
 	}
 	SelectionSets
 	{

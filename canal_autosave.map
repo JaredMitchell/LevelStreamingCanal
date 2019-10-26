@@ -12642,6 +12642,7 @@ brushDef3
 {
 "classname" "atdm:door_104x56_2hinge"
 "name" "door_104x56x2hinge_28"
+"AIUse" "AIUSE_DOOR"
 "lock_picktype" "-"
 "lock_pins" "0"
 "locked" "1"
@@ -12650,7 +12651,6 @@ brushDef3
 "rotation" "-0.674838 -0.737965 -5.96656e-05 0.737965 -0.674838 -4.67357e-05 -5.7754e-06 -7.55701e-05 1"
 "skin" "door_004"
 "used_by" "BuildingBOffice"
-"AIUse" "AIUSE_DOOR"
 }
 // entity 171
 {
@@ -19016,7 +19016,7 @@ brushDef3
 "obj1_1_spec_val1" "idPlayer"
 "obj1_1_spec_val2" "ship_boarding_objective_trigger"
 "obj1_1_state" "0"
-"obj1_1_type" "location"
+"obj1_1_type" "custom"
 "obj1_desc" "Find a way to get onto the ship"
 "obj1_irreversible" "1"
 "obj1_mandatory" "1"
@@ -19110,9 +19110,9 @@ brushDef3
 "name" "BuildingBOffice"
 "bind" "atdm_ai_guard_thug_5"
 "bindToJoint" "Hips"
+"inv_name" "Office Key"
 "origin" "1467.95 2942.51 895.95"
 "rotation" "0.225484 0.107358 -0.968313 -0.645683 0.760748 -0.0660104 0.729556 0.640106 0.240856"
-"inv_name" "Office Key"
 }
 // entity 437
 {
@@ -19143,26 +19143,6 @@ brushDef3
 // entity 440
 {
 "classname" "info_tdm_objective_location"
-"name" "ship_boarding_objective_trigger"
-"bind" "ship_move_point"
-"model" "ship_boarding_objective_trigger"
-"origin" "-2520 4008 920"
-// primitive 0
-{
-brushDef3
-{
-( 0 0 1 -472 ) ( ( 0.03125 0 45 ) ( 0 0.03125 18 ) ) "textures/common/clip" 0 0 0
-( 0 1 0 -232 ) ( ( 0.03125 0 43 ) ( 0 0.03125 16 ) ) "textures/common/clip" 0 0 0
-( 1 0 0 -888 ) ( ( 0.03125 0 50 ) ( 0 0.03125 16 ) ) "textures/common/clip" 0 0 0
-( 0 0 -1 -472 ) ( ( 0.03125 0 45 ) ( 0 0.03125 43 ) ) "textures/common/clip" 0 0 0
-( 0 -1 0 -312 ) ( ( 0.03125 0 84.5 ) ( 0 0.03125 16 ) ) "textures/common/clip" 0 0 0
-( -1 0 0 -1064 ) ( ( 0.03125 0 83 ) ( 0 0.03125 16 ) ) "textures/common/clip" 0 0 0
-}
-}
-}
-// entity 441
-{
-"classname" "info_tdm_objective_location"
 "name" "exit_objective_trigger"
 "model" "exit_objective_trigger"
 "origin" "-920 2152 896"
@@ -19179,7 +19159,7 @@ brushDef3
 }
 }
 }
-// entity 442
+// entity 441
 {
 "classname" "info_tdm_objective_location"
 "name" "ship_exit_failure_trigger"
@@ -19198,7 +19178,7 @@ brushDef3
 }
 }
 }
-// entity 443
+// entity 442
 {
 "classname" "info_tdm_objective_location"
 "name" "player_disembark_trigger"
@@ -19217,7 +19197,7 @@ brushDef3
 }
 }
 }
-// entity 444
+// entity 443
 {
 "classname" "atdm:target_setobjective_state"
 "name" "setObjectiveFailEntity"
@@ -19225,7 +19205,7 @@ brushDef3
 "obj_state" "3"
 "origin" "3680 4000 768"
 }
-// entity 445
+// entity 444
 {
 "classname" "atdm:static_custom_item"
 "name" "McGuffin"
@@ -19236,7 +19216,7 @@ brushDef3
 "origin" "-512 5376 780"
 "rotation" "1 0 0 0 1 0 0 0 1"
 }
-// entity 446
+// entity 445
 {
 "classname" "trigger_once_entityname"
 "name" "trigger_once_entityname_1"
@@ -19257,7 +19237,7 @@ brushDef3
 }
 }
 }
-// entity 447
+// entity 446
 {
 "classname" "atdm:target_callscriptfunction"
 "name" "callScriptFunction_CanalStart"
@@ -19265,14 +19245,14 @@ brushDef3
 "foreach" "0"
 "origin" "-1128 2784 960"
 }
-// entity 448
+// entity 447
 {
 "classname" "atdm:mover_lever"
 "name" "atdm_mover_lever_1"
 "model" "atdm_mover_lever_1"
+"move_time" "8"
 "origin" "732 3456 642"
 "rotate" "0 0 -70"
-"move_time" "8"
 // primitive 0
 {
 brushDef3
@@ -19286,7 +19266,7 @@ brushDef3
 }
 }
 }
-// entity 449
+// entity 448
 {
 "classname" "func_static"
 "name" "func_static_30"
@@ -19294,7 +19274,7 @@ brushDef3
 "origin" "672 3350 806"
 "rotation" "1 0 0 0 1 0 0 0 1"
 }
-// entity 450
+// entity 449
 {
 "classname" "light"
 "name" "light_35"
@@ -19304,7 +19284,7 @@ brushDef3
 "origin" "672.55 3344.45 718"
 "rotation" "0 1 0 -1 0 0 0 0 1"
 }
-// entity 451
+// entity 450
 {
 "classname" "light"
 "name" "light_36"
@@ -19314,50 +19294,113 @@ brushDef3
 "origin" "728.55 3460.45 718"
 "rotation" "0 1 0 -1 0 0 0 0 1"
 }
-// entity 452
+// entity 451
 {
 "classname" "atdm:froblock"
 "name" "atdm_froblock_1"
 "model" "models/darkmod/door_related/lockbox_01.ase"
 "origin" "523 3361 672"
-"used_by" "drawbridge_key"
 "rotation" "1 0 0 0 1 0 0 0 1"
 "target" "atdm_mover_lever_1"
+"used_by" "drawbridge_key"
 }
-// entity 453
+// entity 452
 {
 "classname" "atdm:key_fancy02"
 "name" "drawbridge_key"
+"inv_name" "Drawbridge Key"
 "origin" "1176 2920 903"
 "rotation" "1 0 0 0 1 0 0 0 1"
-"inv_name" "Drawbridge Key"
 }
-// entity 454
+// entity 453
 {
 "classname" "func_rotating"
-"name" "func_rotating_1"
+"name" "gear_jammable_2"
 "model" "models/darkmod/mechanical/gears/gear_large_hollow_5_spoke.lwo"
 "origin" "2124 3012 628"
 "rotation" "1 0 0 0 1 0 0 0 1"
 "speed" "60"
+"x_axis" "1"
 }
-// entity 455
+// entity 454
 {
 "classname" "func_rotating"
-"name" "func_rotating_2"
+"name" "gear_jammable_3"
+"frob_action_script" "use_gear"
+"frobable" "1"
+"item_name" "hammer guy"
 "model" "models/darkmod/mechanical/gears/gear_large_hollow_5_spoke.lwo"
 "origin" "2124 3057 643"
 "rotation" "1 0 0 0 1 0 0 0 1"
 "speed" "-60"
+"x_axis" "1"
 }
-// entity 456
+// entity 455
 {
 "classname" "atdm:moveable_smithy_hammer"
 "name" "atdm_moveable_smithy_hammer_1"
-"origin" "3640 3088 720"
-"rotation" "0 0 1 0 1 0 -1 0 0"
-"inv_name" "Hammer"
 "inv_droppable" "1"
 "inv_icon" "-"
+"inv_name" "Hammer"
 "inv_use_on_frob" "1"
+"model" "models/darkmod/tools/smithyhammer.lwo"
+"origin" "3640 3088 720"
+"rotation" "0 0 1 0 1 0 -1 0 0"
+}
+// entity 456
+{
+"classname" "atdm:target_setobjective_state"
+"name" "setBoardObjectiveSuccess"
+"obj_id1" "1"
+"obj_state" "1"
+"origin" "-984 4424 1752"
+}
+// entity 457
+{
+"classname" "trigger_once_entityname"
+"name" "trigger_once_entityname_2"
+"bind" "ship_move_point"
+"entityname" "player1"
+"model" "trigger_once_entityname_2"
+"origin" "-2608 3964 936"
+"target" "setBoardObjectiveSuccess"
+// primitive 0
+{
+brushDef3
+{
+( 0 0 1 -472 ) ( ( 0.0078125 0 0 ) ( 0 0.0078125 0 ) ) "textures/common/trigentityname_once" 0 0 0
+( 0 1 0 -252 ) ( ( 0.0078125 0 0 ) ( 0 0.0078125 0.125 ) ) "textures/common/trigentityname_once" 0 0 0
+( 1 0 0 -928 ) ( ( 0.0078125 0 0 ) ( 0 0.0078125 0.125 ) ) "textures/common/trigentityname_once" 0 0 0
+( 0 0 -1 -472 ) ( ( 0.0078125 0 0 ) ( 0 0.0078125 0 ) ) "textures/common/trigentityname_once" 0 0 0
+( 0 -1 0 -252 ) ( ( 0.0078125 0 0 ) ( 0 0.0078125 0.125 ) ) "textures/common/trigentityname_once" 0 0 0
+( -1 0 0 -928 ) ( ( 0.0078125 0 0 ) ( 0 0.0078125 0.125 ) ) "textures/common/trigentityname_once" 0 0 0
+}
+}
+}
+// entity 458
+{
+"classname" "hammer_item"
+"name" "hammer_item_1"
+"origin" "3632 3120 704"
+"rotation" "1 0 0 0 1 0 0 0 1"
+}
+// entity 459
+{
+"classname" "func_rotating"
+"name" "gear_jammable_1"
+"model" "models/darkmod/mechanical/gears/gear_large_hollow_5_spoke.lwo"
+"origin" "2124 2964 632"
+"rotation" "1 0 0 0 1 0 0 0 1"
+"speed" "60"
+"x_axis" "1"
+"frobable" "1"
+"item_name" "hammer_guy"
+}
+// entity 460
+{
+"classname" "func_static"
+"name" "func_static_154"
+"origin" "2118 2992 656"
+"rotation" "1 0 0 0 1 0 0 0 1"
+"model" "models/darkmod/tools/smithyhammer.lwo"
 }

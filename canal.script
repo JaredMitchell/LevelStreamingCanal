@@ -1,11 +1,9 @@
 #ifndef __CANAL_SCRIPT__
 #define __CANAL_SCRIPT__
 
-void triggerDebug()
-{
-	sys.print("yup");
-}
+boolean isCanalJammed;
 
+//logic for setting water positions every frame
 void waterLerp(vector Lock1EndPoint, vector Lock2EndPoint, float duration)
 {
 	vector Lock1StartPoint = $lock1Water.getWorldOrigin();
@@ -34,54 +32,84 @@ void waterLerp(vector Lock1EndPoint, vector Lock2EndPoint, float duration)
 	}
 }
 
+//logic that actually runs the canal
 void canalLogic()
 {
-	//lock1 fills, lock2 drains
-	thread waterLerp('0 3968 288', '2688 3968 -96', 10); //was 40
-	sys.wait(10);
+	if(!isCanalJammed)
+	{
+		//lock1 fills, lock2 drains
+		thread waterLerp('0 3968 288', '2688 3968 -96', 10); //was 40
+		sys.wait(10);
+	}	
 
-	$lock1North.activate($player1);
-	$lock1South.activate($player1);
-	sys.wait(20);
+	if(!isCanalJammed)
+	{
+		$lock1North.activate($player1);
+		$lock1South.activate($player1);
+		sys.wait(20);
 
-	$ship_move_point.startSpline($func_splinemover_2);
-	sys.wait(10); //was 120
+		$ship_move_point.startSpline($func_splinemover_2);
+		sys.wait(10); //was 120
+	}
 
-	$lock1North.activate($player1);
-	$lock1South.activate($player1);
-	sys.wait(20);
+	if(!isCanalJammed)
+	{
+		$lock1North.activate($player1);
+		$lock1South.activate($player1);
+		sys.wait(20);
+	}
 
-	//lock1 drains, lock2 fills
-	thread waterLerp('0 3968 96', '2688 3968 96', 10); //was 120
-	$ship_move_point.disableSplineAngles();
-	$ship_move_point.startSpline($func_splinemover_3);
-	sys.wait(10); //was 120
+	if(!isCanalJammed)
+	{
+		//lock1 drains, lock2 fills
+		thread waterLerp('0 3968 96', '2688 3968 96', 10); //was 120
+		$ship_move_point.disableSplineAngles();
+		$ship_move_point.startSpline($func_splinemover_3);
+		sys.wait(10); //was 120
+	}
 
-	$lock2North.activate($player1);
-	$lock2South.activate($player1);
-	sys.wait(20);
+	if(!isCanalJammed)
+	{
+		$lock2North.activate($player1);
+		$lock2South.activate($player1);
+		sys.wait(20);
 
-	$ship_move_point.startSpline($func_splinemover_4);
-	sys.wait(10); //was 120
+		$ship_move_point.startSpline($func_splinemover_4);
+		sys.wait(10); //was 120
+	}		
 
-	$lock2North.activate($player1);
-	$lock2South.activate($player1);
-	sys.wait(20);
+	if(!isCanalJammed)
+	{
+		$lock2North.activate($player1);
+		$lock2South.activate($player1);
+		sys.wait(20);
+	}
 
-	//lock1 fills, lock2 drains
-	thread waterLerp('0 3968 288', '2688 3968 -96', 10); //was 120
-	$ship_move_point.disableSplineAngles();
-	$ship_move_point.startSpline($func_splinemover_5);
-	sys.wait(10); //was 120
+	if(!isCanalJammed)
+	{
+		//lock1 fills, lock2 drains
+		thread waterLerp('0 3968 288', '2688 3968 -96', 10); //was 120
+		$ship_move_point.disableSplineAngles();
+		$ship_move_point.startSpline($func_splinemover_5);
+		sys.wait(10); //was 120
+	}
 
-	$lock3North.activate($player1);
-	$lock3South.activate($player1);
-	sys.wait(20);
+	if(isCanalJammed)
+	{
+		$player1.setObjectiveState(3, OBJ_COMPLETE);
+	}
 
-	$ship_move_point.startSpline($func_splinemover_6);
-	sys.wait(10); //was 120
+	if(!isCanalJammed)
+	{
+		$lock3North.activate($player1);
+		$lock3South.activate($player1);
+		sys.wait(20);
 
-	//$setObjectiveFailEntity.activate($player1);
+		$ship_move_point.startSpline($func_splinemover_6);
+		sys.wait(10); //was 120
+
+		//$setObjectiveFailEntity.activate($player1);
+	}		
 }
 
 void main()
@@ -91,17 +119,17 @@ void main()
 	$ship_move_point.accelTime(3);
 	$ship_move_point.decelTime(3);
 
+	isCanalJammed = false;
+
 	sys.waitFrame();
+
+	sys.setcvar("jam", isCanalJammed);
 
 	sys.print($player1.getName() + "\n");
 }
 
 void canalStartLogic()
 {
-	sys.print("canalStartLogic\n");
-
-	//reveal objective(s)
-
 	canalLogic();
 }
 
@@ -153,7 +181,17 @@ void use_gear()
     if ($player1.getCurInvItemName() == $gear_jammable_1.getKey("item_name"))
 		{
 			$player1.changeInvItemCount(curr_item.getKey("inv_name"), curr_item.getKey("inv_category"), -1); //Removes item count by one.
+			$gear_jammable_1.activate($player1);
+			$gear_jammable_2.activate($player1);
+			$gear_jammable_3.activate($player1);
 			sys.wait( 1 );
+			$hammer_model.show();
+
+			$gear_jammable_1.setFrobable(0);
+			$gear_jammable_2.setFrobable(0);
+			$gear_jammable_3.setFrobable(0);
+
+			isCanalJammed = true;
 		}
 }
 

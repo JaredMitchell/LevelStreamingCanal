@@ -1,9 +1,5 @@
 DarkRadiant Map Information File Version 2
 {
-	MapEditTimings
-	{
-		TotalSecondsEdited { 83181 }
-	}
 	SelectionGroups
 	{
 		SelectionGroup 0 { "" }
@@ -30,6 +26,10 @@ DarkRadiant Map Information File Version 2
 		Node { ( 402 ) ( 0 ) } // entity (func_static_731)
 		Node { ( 438 ) ( 1 ) } // entity (lockbox_1)
 		Node { ( 439 ) ( 1 ) } // entity (atdm_lockbox_lever_01_1)
+	}
+	MapEditTimings
+	{
+		TotalSecondsEdited { 84064 }
 	}
 	Layers
 	{
@@ -1775,14 +1775,15 @@ DarkRadiant Map Information File Version 2
 		Node { 0 } // entity (light_36)
 		Node { 0 } // entity (atdm_froblock_1)
 		Node { 0 } // entity (drawbridge_key)
-		Node { 0 } // entity (func_rotating_1)
-		Node { 0 } // entity (func_rotating_2)
+		Node { 0 } // entity (gear_jammable_2)
+		Node { 0 } // entity (gear_jammable_3)
 		Node { 0 } // entity (atdm_moveable_smithy_hammer_1)
 		Node { 0 } // entity (setBoardObjectiveSuccess)
 		Node { 0 } // entity (trigger_once_entityname_2)
 		Node { 0 } // brush (Brush)
-		Node { 0 } // entity (gear_jammable_1)
 		Node { 0 } // entity (hammer_item_1)
+		Node { 0 } // entity (gear_jammable_1)
+		Node { 0 } // entity (hammer_model)
 	}
 	SelectionSets
 	{
