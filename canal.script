@@ -38,8 +38,8 @@ void canalLogic()
 	if(!isCanalJammed)
 	{
 		//lock1 fills, lock2 drains
-		thread waterLerp('0 3968 288', '2688 3968 -96', 10); //was 40
-		sys.wait(10);
+		thread waterLerp('0 3968 288', '2688 3968 -96', 40);
+		sys.wait(40);
 	}	
 
 	if(!isCanalJammed)
@@ -49,7 +49,7 @@ void canalLogic()
 		sys.wait(20);
 
 		$ship_move_point.startSpline($func_splinemover_2);
-		sys.wait(10); //was 120
+		sys.wait(120);
 	}
 
 	if(!isCanalJammed)
@@ -62,10 +62,10 @@ void canalLogic()
 	if(!isCanalJammed)
 	{
 		//lock1 drains, lock2 fills
-		thread waterLerp('0 3968 96', '2688 3968 96', 10); //was 120
+		thread waterLerp('0 3968 96', '2688 3968 96', 120);
 		$ship_move_point.disableSplineAngles();
 		$ship_move_point.startSpline($func_splinemover_3);
-		sys.wait(10); //was 120
+		sys.wait(120); //was 120
 	}
 
 	if(!isCanalJammed)
@@ -75,7 +75,7 @@ void canalLogic()
 		sys.wait(20);
 
 		$ship_move_point.startSpline($func_splinemover_4);
-		sys.wait(10); //was 120
+		sys.wait(120);
 	}		
 
 	if(!isCanalJammed)
@@ -88,10 +88,10 @@ void canalLogic()
 	if(!isCanalJammed)
 	{
 		//lock1 fills, lock2 drains
-		thread waterLerp('0 3968 288', '2688 3968 -96', 10); //was 120
+		thread waterLerp('0 3968 288', '2688 3968 -96', 120);
 		$ship_move_point.disableSplineAngles();
 		$ship_move_point.startSpline($func_splinemover_5);
-		sys.wait(10); //was 120
+		sys.wait(120);
 	}
 
 	if(isCanalJammed)
@@ -106,16 +106,16 @@ void canalLogic()
 		sys.wait(20);
 
 		$ship_move_point.startSpline($func_splinemover_6);
-		sys.wait(10); //was 120
+		sys.wait(120);
 
-		//$setObjectiveFailEntity.activate($player1);
+		$setObjectiveFailEntity.activate($player1);
 	}		
 }
 
 void main()
 {
 	sys.print("canal main()\n");
-	$ship_move_point.time(10); //was 120
+	$ship_move_point.time(120);
 	$ship_move_point.accelTime(3);
 	$ship_move_point.decelTime(3);
 
