@@ -39,7 +39,12 @@ void canalLogic()
 	{
 		//lock1 fills, lock2 drains
 		thread waterLerp('0 3968 288', '2688 3968 -96', 40);
-		sys.wait(40);
+
+		sys.wait(5);
+
+		$revealObjectiveEntity.activate($player1);
+
+		sys.wait(35);
 	}	
 
 	if(!isCanalJammed)

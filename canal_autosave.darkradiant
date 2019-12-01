@@ -1,5 +1,36 @@
 DarkRadiant Map Information File Version 2
 {
+	MapEditTimings
+	{
+		TotalSecondsEdited { 114644 }
+	}
+	SelectionGroups
+	{
+		SelectionGroup 0 { "" }
+		SelectionGroup 1 { "" }
+	}
+	SelectionGroupNodeMapping
+	{
+		Node { ( 0 671 ) ( 0 ) } // brush (Brush)
+		Node { ( 0 672 ) ( 0 ) } // brush (Brush)
+		Node { ( 0 673 ) ( 0 ) } // brush (Brush)
+		Node { ( 0 674 ) ( 0 ) } // brush (Brush)
+		Node { ( 0 675 ) ( 0 ) } // brush (Brush)
+		Node { ( 0 676 ) ( 0 ) } // brush (Brush)
+		Node { ( 0 677 ) ( 0 ) } // brush (Brush)
+		Node { ( 375 ) ( 0 ) } // entity (fog_sky)
+		Node { ( 376 ) ( 0 ) } // entity (func_static_735)
+		Node { ( 377 ) ( 0 ) } // entity (light_33)
+		Node { ( 378 ) ( 0 ) } // entity (func_static_660)
+		Node { ( 379 ) ( 0 ) } // entity (light_34)
+		Node { ( 380 ) ( 0 ) } // entity (info_portalsky_3)
+		Node { ( 381 ) ( 0 ) } // entity (func_emitter_3)
+		Node { ( 382 ) ( 0 ) } // entity (func_static_341)
+		Node { ( 383 ) ( 0 ) } // entity (func_static_153)
+		Node { ( 384 ) ( 0 ) } // entity (func_static_731)
+		Node { ( 420 ) ( 1 ) } // entity (lockbox_1)
+		Node { ( 421 ) ( 1 ) } // entity (atdm_lockbox_lever_01_1)
+	}
 	Layers
 	{
 		Layer 0 { Default }
@@ -673,9 +704,25 @@ DarkRadiant Map Information File Version 2
 		Node { 0 } // brush (Brush)
 		Node { 0 } // brush (Brush)
 		Node { 0 } // brush (Brush)
+		Node { 0 } // patch (Patch)
+		Node { 0 } // patch (Patch)
 		Node { 0 } // brush (Brush)
-		Node { 0 } // patch (Patch)
-		Node { 0 } // patch (Patch)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
 		Node { 0 } // brush (Brush)
 		Node { 0 } // brush (Brush)
 		Node { 0 } // brush (Brush)
@@ -1853,40 +1900,57 @@ DarkRadiant Map Information File Version 2
 		Node { 0 } // entity (func_static_2)
 		Node { 0 } // brush (Brush)
 		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
 		Node { 0 } // entity (door_104x56x2hinge_2)
 		Node { 0 } // entity (doorhandle_104x56x3hinge_3)
 		Node { 0 } // entity (lobbyKey)
-	}
-	MapEditTimings
-	{
-		TotalSecondsEdited { 107377 }
-	}
-	SelectionGroups
-	{
-		SelectionGroup 0 { "" }
-		SelectionGroup 1 { "" }
-	}
-	SelectionGroupNodeMapping
-	{
-		Node { ( 0 672 ) ( 0 ) } // brush (Brush)
-		Node { ( 0 673 ) ( 0 ) } // brush (Brush)
-		Node { ( 0 674 ) ( 0 ) } // brush (Brush)
-		Node { ( 0 675 ) ( 0 ) } // brush (Brush)
-		Node { ( 0 676 ) ( 0 ) } // brush (Brush)
-		Node { ( 0 677 ) ( 0 ) } // brush (Brush)
-		Node { ( 0 678 ) ( 0 ) } // brush (Brush)
-		Node { ( 375 ) ( 0 ) } // entity (fog_sky)
-		Node { ( 376 ) ( 0 ) } // entity (func_static_735)
-		Node { ( 377 ) ( 0 ) } // entity (light_33)
-		Node { ( 378 ) ( 0 ) } // entity (func_static_660)
-		Node { ( 379 ) ( 0 ) } // entity (light_34)
-		Node { ( 380 ) ( 0 ) } // entity (info_portalsky_3)
-		Node { ( 381 ) ( 0 ) } // entity (func_emitter_3)
-		Node { ( 382 ) ( 0 ) } // entity (func_static_341)
-		Node { ( 383 ) ( 0 ) } // entity (func_static_153)
-		Node { ( 384 ) ( 0 ) } // entity (func_static_731)
-		Node { ( 420 ) ( 1 ) } // entity (lockbox_1)
-		Node { ( 421 ) ( 1 ) } // entity (atdm_lockbox_lever_01_1)
+		Node { 0 } // entity (revealObjectiveEntity)
+		Node { 0 } // entity (func_static_154)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // entity (func_static_156)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // entity (func_static_157)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // entity (func_static_158)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // entity (func_static_175)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // entity (func_static_176)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // entity (light_3)
+		Node { 0 } // entity (func_static_209)
+		Node { 0 } // entity (light_38)
+		Node { 0 } // entity (func_static_212)
+		Node { 0 } // entity (atdm_ai_guard_thug_1)
+		Node { 0 } // entity (building_A_Front_Corner_1)
+		Node { 0 } // entity (building_A_Front_Corner_2)
+		Node { 0 } // entity (building_A_Front_Corner_3)
+		Node { 0 } // entity (building_A_Front_Corner_4)
+		Node { 0 } // entity (building_A_Front_Corner_5)
+		Node { 0 } // entity (building_A_Front_Corner_6)
+		Node { 0 } // entity (building_A_Front_Corner_7)
+		Node { 0 } // entity (building_A_Front_Corner_8)
+		Node { 0 } // entity (building_A_Front_Corner_9)
+		Node { 0 } // entity (building_A_Front_Corner_10)
+		Node { 0 } // entity (building_A_Front_Wait_1)
+		Node { 0 } // entity (building_A_Front_Wait_2)
+		Node { 0 } // entity (light_39)
 	}
 	SelectionSets
 	{
