@@ -38,13 +38,13 @@ void canalLogic()
 	if(!isCanalJammed)
 	{
 		//lock1 fills, lock2 drains
-		thread waterLerp('0 3968 288', '2688 3968 -96', 40);
+		thread waterLerp('0 3968 288', '2688 3968 -96', 480);
 
 		sys.wait(5);
 
 		$revealObjectiveEntity.activate($player1);
 
-		sys.wait(35);
+		sys.wait(475);
 	}	
 
 	if(!isCanalJammed)
@@ -67,10 +67,10 @@ void canalLogic()
 	if(!isCanalJammed)
 	{
 		//lock1 drains, lock2 fills
-		thread waterLerp('0 3968 96', '2688 3968 96', 120);
+		thread waterLerp('0 3968 96', '2688 3968 96', 480);
 		$ship_move_point.disableSplineAngles();
 		$ship_move_point.startSpline($func_splinemover_3);
-		sys.wait(120); //was 120
+		sys.wait(480); //was 120
 	}
 
 	if(!isCanalJammed)
@@ -93,10 +93,10 @@ void canalLogic()
 	if(!isCanalJammed)
 	{
 		//lock1 fills, lock2 drains
-		thread waterLerp('0 3968 288', '2688 3968 -96', 120);
+		thread waterLerp('0 3968 288', '2688 3968 -96', 480);
 		$ship_move_point.disableSplineAngles();
 		$ship_move_point.startSpline($func_splinemover_5);
-		sys.wait(120);
+		sys.wait(480);
 	}
 
 	if(isCanalJammed)
