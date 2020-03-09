@@ -1,9 +1,5 @@
 DarkRadiant Map Information File Version 2
 {
-	MapEditTimings
-	{
-		TotalSecondsEdited { 186158 }
-	}
 	SelectionGroups
 	{
 		SelectionGroup 0 { "" }
@@ -780,6 +776,11 @@ DarkRadiant Map Information File Version 2
 		Node { 0 } // brush (Brush)
 		Node { 0 } // patch (Patch)
 		Node { 0 } // patch (Patch)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
 		Node { 0 } // brush (Brush)
 		Node { 0 } // brush (Brush)
 		Node { 0 } // brush (Brush)
@@ -2492,6 +2493,25 @@ DarkRadiant Map Information File Version 2
 		Node { 0 } // entity (func_static_411)
 		Node { 0 } // entity (light_68)
 		Node { 0 } // entity (light_69)
+		Node { 0 } // entity (func_static_412)
+		Node { 0 } // entity (light_70)
+		Node { 0 } // entity (func_static_413)
+		Node { 0 } // entity (func_aas_obstacle_1)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // entity (func_aas_obstacle_4)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // entity (func_aas_obstacle_2)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // entity (func_aas_obstacle_5)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // entity (func_aas_obstacle_3)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // entity (func_aas_obstacle_6)
+		Node { 0 } // brush (Brush)
+	}
+	MapEditTimings
+	{
+		TotalSecondsEdited { 189693 }
 	}
 	SelectionSets
 	{
