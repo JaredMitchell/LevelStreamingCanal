@@ -43,6 +43,7 @@ void canalLogic()
 		sys.wait(5);
 
 		$revealObjectiveEntity.activate($player1);
+		$atdm_ai_guard_thug_15.restartPatrol();
 
 		sys.wait(475);
 	}	
