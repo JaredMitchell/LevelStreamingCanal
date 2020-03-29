@@ -4,6 +4,9 @@ DarkRadiant Map Information File Version 2
 	{
 		SelectionGroup 0 { "" }
 		SelectionGroup 1 { "" }
+		SelectionGroup 2 { "" }
+		SelectionGroup 3 { "" }
+		SelectionGroup 4 { "" }
 	}
 	SelectionGroupNodeMapping
 	{
@@ -26,10 +29,14 @@ DarkRadiant Map Information File Version 2
 		Node { ( 345 ) ( 0 ) } // entity (func_static_731)
 		Node { ( 381 ) ( 1 ) } // entity (lockbox_1)
 		Node { ( 382 ) ( 1 ) } // entity (atdm_lockbox_lever_01_1)
-	}
-	MapEditTimings
-	{
-		TotalSecondsEdited { 209386 }
+		Node { ( 853 ) ( 2 ) } // entity (func_static_437)
+		Node { ( 854 ) ( 2 ) } // entity (func_static_435)
+		Node { ( 855 ) ( 2 ) } // entity (func_static_436)
+		Node { ( 856 ) ( 2 ) } // entity (func_static_438)
+		Node { ( 867 ) ( 3 ) } // entity (func_static_446)
+		Node { ( 868 ) ( 3 ) } // entity (atdm_moveable_candle_short_1)
+		Node { ( 869 ) ( 4 ) } // entity (atdm_moveable_candle_short_2)
+		Node { ( 870 ) ( 4 ) } // entity (func_static_447)
 	}
 	Layers
 	{
@@ -763,6 +770,18 @@ DarkRadiant Map Information File Version 2
 		Node { 0 } // brush (Brush)
 		Node { 0 } // patch (Patch)
 		Node { 0 } // patch (Patch)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
 		Node { 0 } // brush (Brush)
 		Node { 0 } // brush (Brush)
 		Node { 0 } // brush (Brush)
@@ -1984,7 +2003,7 @@ DarkRadiant Map Information File Version 2
 		Node { 0 } // brush (Brush)
 		Node { 0 } // brush (Brush)
 		Node { 0 } // brush (Brush)
-		Node { 0 } // entity (lobbyKey)
+		Node { 0 } // entity (firstFloorOfficeKey)
 		Node { 0 } // entity (revealObjectiveEntity)
 		Node { 0 } // entity (func_static_154)
 		Node { 0 } // brush (Brush)
@@ -2548,12 +2567,57 @@ DarkRadiant Map Information File Version 2
 		Node { 0 } // entity (func_static_420)
 		Node { 0 } // entity (func_static_419)
 		Node { 0 } // entity (light_75)
-		Node { 0 } // entity (func_static_421)
-		Node { 0 } // entity (light_76)
 		Node { 0 } // entity (func_static_422)
 		Node { 0 } // brush (Brush)
 		Node { 0 } // entity (func_static_423)
 		Node { 0 } // entity (light_77)
+		Node { 0 } // entity (func_static_424)
+		Node { 0 } // entity (func_static_425)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // entity (light_78)
+		Node { 0 } // entity (func_static_421)
+		Node { 0 } // entity (light_76)
+		Node { 0 } // entity (func_static_427)
+		Node { 0 } // entity (func_static_426)
+		Node { 0 } // entity (func_static_428)
+		Node { 0 } // entity (func_static_429)
+		Node { 0 } // entity (func_static_433)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // entity (func_static_437)
+		Node { 0 } // entity (func_static_435)
+		Node { 0 } // entity (func_static_436)
+		Node { 0 } // entity (func_static_438)
+		Node { 0 } // entity (atdm_mover_door_sliding_1)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // entity (func_static_439)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // entity (func_static_440)
+		Node { 0 } // entity (light_79)
+		Node { 0 } // entity (func_static_441)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // entity (func_static_442)
+		Node { 0 } // entity (func_static_443)
+		Node { 0 } // entity (func_static_444)
+		Node { 0 } // entity (func_static_445)
+		Node { 0 } // entity (light_80)
+		Node { 0 } // entity (func_static_446)
+		Node { 0 } // entity (atdm_moveable_candle_short_1)
+		Node { 0 } // entity (atdm_moveable_candle_short_2)
+		Node { 0 } // entity (func_static_447)
+		Node { 0 } // entity (light_83)
+		Node { 0 } // entity (func_static_448)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // entity (light_84)
+		Node { 0 } // entity (func_static_449)
+		Node { 0 } // brush (Brush)
+		Node { 0 } // entity (light_81)
+		Node { 0 } // entity (func_static_450)
+		Node { 0 } // brush (Brush)
+	}
+	MapEditTimings
+	{
+		TotalSecondsEdited { 217980 }
 	}
 	SelectionSets
 	{
