@@ -1,0 +1,64 @@
+maps/canal/mission_briefing
+{
+ "num_pages": "1"
+ 
+ "page1_body" :
+ {
+   "The Canal"
+   ""
+   "A local merchant approached me about a job. He says there's a rival merchant who has something very special on a ship he's contracted. The guy was vague about what exactly this prize is, but I'm sure I'll find out once I'm carrying it back."
+   ""
+   "One complication: the ship is bound to sail out to the ocean tomorrow. Once it's through the canal and out to sea it'll be impossible to intercept. It's sitting in a shipyard for the time being in the Maritime District, so tonight looks like the last chance I'll get. Sneak onto a ship at port, grab whatever this is, and slip back onto the docks. Should be easy."
+}
+}
+
+readable/canal/scroll_shipping_instructions
+{
+	precache
+	"num_pages"	: "2"
+	"page1_title"	:
+	{
+		"In The Event of the Death of Captain Wick"
+	}
+	"page1_body"	:
+	{
+		""
+		""
+		""
+		"First mate Guilford, upon my instruction, has hidden the key to the chest somewhere below deck. He shall not retrieve it until we have arrived at our destination and met the recipient of the contents of the chest, as per our client's instruction."
+		""
+		"My body shall be returned to the village of Haverport, where my wife Gertrude resides, along with my share of the profits of this job, which shall be "
+	}
+	"page2_title"	:
+	{
+		""
+	}
+	"page2_body"	:
+	{
+		"bequeathed to her."
+		""
+		"First mate Guilford shall be promoted to captain of this ship."
+	}
+	"gui_page1"	: "guis/readables/scrolls/scroll_calig_rapscallionpirate.gui"
+	"gui_page2"	: "guis/readables/scrolls/scroll_calig_rapscallionpirate.gui"
+	"snd_page_turn"	: "readable_page_turn"
+}
+
+
+readable/canal/sheet_expense_report
+{
+	precache
+	"num_pages"	: "1"
+	"page1_title"	:
+	{
+		""
+	}
+	"page1_body"	:
+	{
+		"In light of recent acts of vandalism at the pump house under our ownership, it is the belief of the board that a temporary increase of budget to fifteen-hundred coins monthly should be allowed for the purposes of hiring a greater number of guardsmen. We believe that this will more than offset the calculated potential losses of twelve-hundred coins per day that the company experienced when our canalway was last seized up by such petty acts."
+		""
+		"Such an increase will be approved for a period of six months, after which the continued budgeting of such an increase shall be re-evaluated."
+	}
+	"gui_page1"	: "guis/readables/sheets/sheet_paper_calig_mac_humaine.gui"
+	"snd_page_turn"	: "readable_page_turn"
+}

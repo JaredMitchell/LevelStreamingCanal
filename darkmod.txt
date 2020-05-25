@@ -1,0 +1,4 @@
+Title: The Canal
+Description: Infiltrate a ship headed out to sea to retrieve a secret.
+Author: Jared Mitchell
+Version: 1
